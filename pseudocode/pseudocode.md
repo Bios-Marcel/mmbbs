@@ -37,6 +37,9 @@ function validateNumber(string number) returns integer
 
 function roundUp(integer number) returns integer
     variable modTen = number % 10
+    if modTen == 0
+        return number
+
     return number + (10 - modTen)
 
 function calculateQuersumme(integer number) returns integer
