@@ -12,7 +12,7 @@ Die PixelPic AG benötigt eine Methode, die nach einem Algorithmus eine Prüfz
 ## Lösung
 
 ```Pseudocode
-function validateKreditkartennummer(string number) returns boolean
+function generateChecksum(string number) returns integer
     variable evenMultiliedByThree = 0
     variable quersummenAddedUp = 0
     variable oddNumbersAddedUp = 0
@@ -26,9 +26,18 @@ function validateKreditkartennummer(string number) returns boolean
             quersummenAddedUp = quersummenAddedUp + calculateQuersumme(evenMultiliedByThree)
         else 
             oddNumbersAddedUp = oddNumbersAddedUp + zeichenAlsZahl
-
     
+    variable sumOfQuersummenAndOddIndexesAddedUp = oddNumbersAddedUp + quersummenAddedUp
+    variable difference = sumOfQuersummenAndOddIndexesAddedUp + roundUpToByTenDivisableNumber(sumOfQuersummenAndOddIndexesAddedUp)
 
+    if difference equals 10
+        return 0
+    
+    return difference
+
+function roundUpToByTenDivisableNumber(integer number) returns integer
+    variable modTen = number % 10
+    return number + (10 - modTen)
 
 function calculateQuersumme(integer number) returns integer
     variable numberAsString = number.asString()
