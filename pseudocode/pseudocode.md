@@ -12,12 +12,12 @@ Die PixelPic AG benötigt eine Methode, die nach einem Algorithmus eine Prüfz
 ## Lösung
 
 ```Pseudocode
-function generateChecksum(string number) returns integer
+function validateNumber(string number) returns integer
     variable evenMultiliedByThree = 0
     variable quersummenAddedUp = 0
     variable oddNumbersAddedUp = 0
 
-    for zeichenIndex in 1 to length(number)
+    for zeichenIndex in 1 to length(number) - 1
         zeichenAlsZahl = convertCharacterToInteger(number[zeichenIndex])
 
         if zeichenIndex % 2 equals 0
@@ -28,14 +28,14 @@ function generateChecksum(string number) returns integer
             oddNumbersAddedUp = oddNumbersAddedUp + zeichenAlsZahl
     
     variable sumOfQuersummenAndOddIndexesAddedUp = oddNumbersAddedUp + quersummenAddedUp
-    variable difference = sumOfQuersummenAndOddIndexesAddedUp + roundUpToByTenDivisableNumber(sumOfQuersummenAndOddIndexesAddedUp)
+    variable difference = sumOfQuersummenAndOddIndexesAddedUp + roundUp(sumOfQuersummenAndOddIndexesAddedUp)
 
     if difference equals 10
         return 0
     
-    return difference
+    return difference == convertCharacterToInteger(number[length(number)])
 
-function roundUpToByTenDivisableNumber(integer number) returns integer
+function roundUp(integer number) returns integer
     variable modTen = number % 10
     return number + (10 - modTen)
 
