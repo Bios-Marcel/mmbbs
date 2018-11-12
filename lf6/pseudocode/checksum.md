@@ -12,12 +12,12 @@ Die PixelPic AG benötigt eine Methode, die nach einem Algorithmus eine Prüfz
 ## Lösung
 
 ```Pseudocode
-function validateKreditkartennummer(string number) returns boolean
+function validateNumber(string number) returns integer
     variable evenMultiliedByThree = 0
     variable quersummenAddedUp = 0
     variable oddNumbersAddedUp = 0
 
-    for zeichenIndex in 1 to length(number)
+    for zeichenIndex in 1 to length(number) - 1
         zeichenAlsZahl = convertCharacterToInteger(number[zeichenIndex])
 
         if zeichenIndex % 2 equals 0
@@ -26,9 +26,21 @@ function validateKreditkartennummer(string number) returns boolean
             quersummenAddedUp = quersummenAddedUp + calculateQuersumme(evenMultiliedByThree)
         else 
             oddNumbersAddedUp = oddNumbersAddedUp + zeichenAlsZahl
-
     
+    variable sumOfQuersummenAndOddIndexesAddedUp = oddNumbersAddedUp + quersummenAddedUp
+    variable difference = sumOfQuersummenAndOddIndexesAddedUp + roundUp(sumOfQuersummenAndOddIndexesAddedUp)
 
+    if difference equals 10
+        return 0
+    
+    return difference == convertCharacterToInteger(number[length(number)])
+
+function roundUp(integer number) returns integer
+    variable modTen = number % 10
+    if modTen == 0
+        return number
+
+    return number + (10 - modTen)
 
 function calculateQuersumme(integer number) returns integer
     variable numberAsString = number.asString()

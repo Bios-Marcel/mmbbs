@@ -1,4 +1,4 @@
-# TODO
+# Is lyig in your CV okay
 
 ## 1 For which of these things is it OK to lie about in your resume/CV?
 
