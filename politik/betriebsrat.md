@@ -1,6 +1,10 @@
+---
+fontsize: 12pt
+---
+
 # Betriebsrat
 
-1. Prüfen Sie anhand des Ihnen vorliegenden Informationsmaterials
+1. Prüfen Sie anhand des Ihnen vorliegenden Informationsmaterials
     1. ob bei der Superkauf KG ein Betriebsrat errichtet werden kann,
         > Ja, da mehr als 5 Mitarbeiter vorhanden sind, von denen 3 oder mehr wählbar sind.
     2. falls ja, wie viele Betriebsratsmitglieder für die Superkauf KG gewählt werden dürfen,
