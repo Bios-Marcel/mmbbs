@@ -26,7 +26,7 @@
         (SELECT k.KategorieNr FROM kategorie k WHERE `Name` = 'Grafikkarte')
     );
     ```
-4. Erzeugen Sie eine neue Bestellung, so kauf der neue Kunde Franz Schmidt eine Nvida Power Grafikkarte und Micosoft Office!
+4. Erzeugen Sie eine neue Bestellung, so kauft der neue Kunde Franz Schmidt eine Nvida Power Grafikkarte und Micosoft Office!
     ```SQL
     INSERT INTO bestellung (KundenNr, Datum)
     VALUES (
@@ -36,7 +36,8 @@
 
     INSERT INTO position (BestellNr, ArtikelNr, Menge)
     VALUES (
-        (SELECT BestellNr FROM bestellung ORDER BY Datum DESC LIMIT 1, (SELECT a.ArtikelNr FROM artikel a WHERE `Name` = 'Nvidia Power Grafikkarte'),
+        (SELECT BestellNr FROM bestellung ORDER BY Datum DESC LIMIT 1),
+        (SELECT a.ArtikelNr FROM artikel a WHERE `Name` = 'Nvidia Power Grafikkarte'),
         1
     );
 
@@ -48,7 +49,8 @@
 
     INSERT INTO position (BestellNr, ArtikelNr, Menge)
     VALUES (
-        (SELECT b.BestellNr FROM bestellung b ORDER BY Datum DESC LIMIT 1), (SELECT a.ArtikelNr FROM artikel a WHERE `Name` = 'Microsoft Office'),
+        (SELECT b.BestellNr FROM bestellung b ORDER BY Datum DESC LIMIT 1),
+        (SELECT a.ArtikelNr FROM artikel a WHERE `Name` = 'Microsoft Office'),
         1
     );
     ```
