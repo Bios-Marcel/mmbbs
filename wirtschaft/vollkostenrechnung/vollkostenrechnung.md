@@ -38,11 +38,28 @@ Die Vollkostenrechnung besteht aus 4 Teilrechnungen:
 | | + | Fertigungsgemeinkosten | 220,17% |  |
 | | = | Herstellkosten | |  |
 | | + | Verwaltungsbereich | 15,32% |  | 
-| | + | Vertriebsgemeinkosten | 13,29% | 
-| Betriebsbereich | = | Selbstkosten | |  |
-| | + | Gewinn | 8% |  |
-| Kundenbereich | = | Barverkaufspreis | | 321,18€ |
+| | + | Vertriebsgemeinkosten | 13,29% |  |
+| Betriebsbereich | = | Selbstkosten | | 297,41€ <!-- 321,20 - 23,79 --> |
+| | + | Gewinn | 8% |  23,79€ <!-- 312,20 / (100 + 8) * 8 --> |
+| Kundenbereich | = | Barverkaufspreis | | 321,20€ |
 | | + | Kundenskonto | 2% | 6,56€ |
 | | = | Zielverkaufspreis | | 327,75€ |
 | | + | Kundenrabatt | 5% | 17,25€  |
 | | = | Nettoverkaufspreis | | 345,00€ |
+
+| | | | | | 
+| - | - | - | - | - |
+| Materialbereich | | Materialeinzelkosten |  | |
+| | + | Materialgemeinkosten | 50% |  |
+| Fertigungsbereich | | Fertigungseinzelkosten | |  |
+| | + | Fertigungsgemeinkosten | 89% |  |
+| | = | Herstellkosten | |  |
+| | + | Verwaltungsbereich | 5% |  | 
+| | + | Vertriebsgemeinkosten | 10% |  |
+| Betriebsbereich | = | Selbstkosten | | 415,52€ <!--Barvkp - Gewinn--> |
+| | + | Gewinn | 250% |  1038,81€ <!-- Barvkp / (100 + G) * G --> |
+| Kundenbereich | = | Barverkaufspreis | | 1454,33€ |
+| | + | Kundenskonto | 1% | 14,69€ |
+| | = | Zielverkaufspreis | | 1469,02€ |
+| | + | Kundenrabatt | 2% | 29,98€ |
+| | = | Nettoverkaufspreis | | 1499€ |
