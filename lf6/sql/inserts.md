@@ -36,14 +36,26 @@
 
     INSERT INTO position (BestellNr, ArtikelNr, Menge)
     VALUES (
-        (SELECT b.BestellNr FROM bestellung b ORDER BY Datum DESC LIMIT 1),
+        (SELECT b.BestellNr
+            FROM bestellung b
+            WHERE KundenNr = (
+                SELECT k.KundenNr
+                FROM kunde k
+                WHERE `Name` = 'Franz Schmidt' LIMIT 1)
+            ORDER BY Datum DESC LIMIT 1),
         (SELECT a.ArtikelNr FROM artikel a WHERE `Name` = 'Nvidia Power Grafikkarte'),
         1
     );
 
     INSERT INTO position (BestellNr, ArtikelNr, Menge)
     VALUES (
-        (SELECT b.BestellNr FROM bestellung b ORDER BY Datum DESC LIMIT 1),
+        (SELECT b.BestellNr
+            FROM bestellung b
+            WHERE KundenNr = (
+                SELECT k.KundenNr
+                FROM kunde k
+                WHERE `Name` = 'Franz Schmidt' LIMIT 1)
+            ORDER BY Datum DESC LIMIT 1),
         (SELECT a.ArtikelNr FROM artikel a WHERE `Name` = 'Microsoft Office'),
         1
     );
