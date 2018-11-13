@@ -14,6 +14,7 @@ Dieses Repo beinhaltet die von mir im Unterricht, an welchem ich im Rahmen meine
         2. [Zeitschlitz](lf6/pseudocode/zeitschlitz.md)
     2. SQL
         1. [Inserts](lf6/sql/inserts.md)
+        1. [Updates](lf6/sql/updates.md)
 4. LF10
     1. [Raids](lf10/raid/raid.md)
 5. Wirtschaft
