@@ -20,17 +20,17 @@
     ```SQL
     INSERT INTO artikel (`Name`, `Status`, EK_Preis, VK_Preis, KategorieNR)
     VALUES ('Nvidia Power Grafikkarte',
-        (SELECT `Status` FROM status where `Name` = 'Verfügbar')),
+        (SELECT s.`Status` FROM status s where s.`Name` = 'Verfügbar')),
         216,
         333,
-        (SELECT k.KategorieNr FROM kategorie k WHERE `Name` = 'Grafikkarte')
+        (SELECT k.KategorieNr FROM kategorie k WHERE k.`Name` = 'Grafikkarte')
     );
     ```
 4. Erzeugen Sie eine neue Bestellung, so kauft der neue Kunde Franz Schmidt eine Nvida Power Grafikkarte und Micosoft Office!
     ```SQL
     INSERT INTO bestellung (KundenNr, Datum)
     VALUES (
-        (SELECT k.KundenNr FROM kunde k WHERE `Name` = 'Franz Schmidt'),
+        (SELECT k.KundenNr FROM kunde k WHERE k.`Name` = 'Franz Schmidt'),
         NOW()
     );
 
@@ -41,9 +41,9 @@
             WHERE KundenNr = (
                 SELECT k.KundenNr
                 FROM kunde k
-                WHERE `Name` = 'Franz Schmidt' LIMIT 1)
+                WHERE k.`Name` = 'Franz Schmidt' LIMIT 1)
             ORDER BY Datum DESC LIMIT 1),
-        (SELECT a.ArtikelNr FROM artikel a WHERE `Name` = 'Nvidia Power Grafikkarte'),
+        (SELECT a.ArtikelNr FROM artikel a WHERE a.`Name` = 'Nvidia Power Grafikkarte'),
         1
     );
 
@@ -56,7 +56,7 @@
                 FROM kunde k
                 WHERE `Name` = 'Franz Schmidt' LIMIT 1)
             ORDER BY Datum DESC LIMIT 1),
-        (SELECT a.ArtikelNr FROM artikel a WHERE `Name` = 'Microsoft Office'),
+        (SELECT a.ArtikelNr FROM artikel a WHERE a.`Name` = 'Microsoft Office'),
         1
     );
     ```
@@ -65,9 +65,9 @@
     INSERT INTO artikel (`Name`, `Status`, EK_Preis, VK_Preis, KategorieNr)
     VALUES (
         'Epson Power Jet',
-        (SELECT `Status` FROM status WHERE `Name` = 'Verfügbar'),
+        (SELECT s.`Status` FROM status s WHERE s.`Name` = 'Verfügbar'),
         317.12,
         412,
-        (SELECT k.KategorieNr FROM kategorie k WHERE `Name` = 'Drucker')
+        (SELECT k.KategorieNr FROM kategorie k WHERE k.`Name` = 'Drucker')
     );
     ```
