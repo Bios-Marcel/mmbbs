@@ -19,4 +19,4 @@ Dieses Repo beinhaltet die von mir im Unterricht, an welchem ich im Rahmen meine
     1. [Raids](lf10/raid/raid.md)
 5. Wirtschaft
     1. [Vollkostenrechnung](wirtschaft/vollkostenrechnung/vollkostenrechnung.md)
-    2. [Rehcnungswesen und Controlling](wirtschaft/randc.md)
+    2. [Rechnungswesen und Controlling](wirtschaft/randc.md)
