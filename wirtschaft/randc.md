@@ -20,12 +20,13 @@ Deckungsbeiträge pro Stück (Verkaufspreis - Variable Stückkosten):
 2. Wie soll die Regalaufstellung aussehen?
 
 Regalaufstellung:
+
 | Produkt | Flächennutzung | Menge |
 | - | - | - |
 | Strong and Hot | 1,5m² | 360 |
 | Hollywood Shave | 2m² | 240 |
 | Brazilian Fall | 3m² | 390 |
-| Kixk and Go | 1,5m² | 150 |
+| Kick and Go | 1,5m² | 150 |
 
 3. Welches Betriebsergebnis ist zu erwarten?
 
