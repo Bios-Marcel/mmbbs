@@ -13,13 +13,11 @@ Deckungsbeiträge pro Stück (Verkaufspreis - Variable Stückkosten):
 | Kick and Go | 2,30€ | 0,70€ | **1,60€** |
 | Brazilian Fall | 5,50€ | 1,30€ | **4,20€** |
 
-1. Liegt ein Engpass vor?
-    > Ja, es passt nicht die komplette Bestellung von Kick and Go 
-    > auf das Regal
+## Liegt ein Engpass vor
 
-2. Wie soll die Regalaufstellung aussehen?
+Ja, es passt nicht die komplette Bestellung von Kick and Go auf das Regal
 
-Regalaufstellung:
+## Optimale Regalaufstellung
 
 | Produkt | Flächennutzung | Menge |
 | - | - | - |
@@ -28,7 +26,7 @@ Regalaufstellung:
 | Brazilian Fall | 3m² | 390 |
 | Kick and Go | 1,5m² | 150 |
 
-3. Welches Betriebsergebnis ist zu erwarten?
+## Erwartetes Betriebsergebnis
 
 Rechenweg:
   > 2,10*360
