@@ -6,24 +6,25 @@ nur einmal zum jeweiligen Monatsbeginn aufgefüllt.
 
 Deckungsbeiträge pro Stück:
 
-Hollywood Shave: 2,10€
-
-Strong and Hot: 4,70€
-
-Kick and Go: 1,60€
-
-Brazilian Fall: 4,20€
+| Produkt | Verkaufspreis | Stückkosten | **Deckungsbeitrag**<!-- 
+VK - EK ---> |
+| Hollywood Shave | 3,60€ | 1,50€ | **2,10€** |
+| Strong and Hot | 7,80€ | 3,10€ | **4,70€** |
+| Kick and Go | 2,30€ | 0,70€ | **1,60€** |
+| Brazilian Fall | 5,50€ | 1,30€ | **4,20€** |
 
 1. Liegt ein Engpass vor?
-    > Engpass bei Hollywood Shave
+    > Ja, es passt nicht die komplette Bestellung von Kick and Go 
+    > auf das Regal
 
 2. Wie soll die Regalaufstellung aussehen?
 
 Regalaufstellung:
-    > (3m²) - 360x Strong and Hot
-    > (1m²) - 240x Hollywood Shave
-    > (3m²) - 390x Brazilian Fall
-    > (1m²) - 100x Kick and Go 
+    | Produkt | Flächennutzung | Menge |
+    | Strong and Hot | 1,5m² | 360 |
+    | Hollywood Shave | 2m² | 240 |
+    | Brazilian Fall | 3m² | 390 |
+    | Kixk and Go | 1,5m² | 150 |
 
 3. Welches Betriebsergebnis ist zu erwarten?
 
